@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
-const Footer = () => {
+const Footer = ({cards}) => {
+  const completedCards = cards.filter(({status}) => status && status.includes('complete'))
 
   return (
     <StyledFooter>
-      <Progression>0/4 CONCLUÍDOS</Progression>
+      <Progression>{completedCards.length}/{cards.length} CONCLUÍDOS</Progression>
     </StyledFooter>
   )
 }

@@ -16,8 +16,7 @@ const Layout = styled.div`
   align-items: center;
   background-color: #FB6B6B;
   width: 100vw;
-  height: 100vh;
-  padding: 40px 40px 110px 40px;
+  padding: 40px 40px 110px;
 `
 
 export default App
